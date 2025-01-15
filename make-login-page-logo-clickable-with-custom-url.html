@@ -1,0 +1,25 @@
+<script>
+
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if the element with id 'page-login-index' exists
+    var pageLoginIndex = document.getElementById("page-login-index");
+
+    if (pageLoginIndex) {
+        // Find the element with id 'logoimage'
+        var logoImage = document.getElementById("logoimage");
+
+        if (logoImage) {
+            // Create a new anchor element
+            var anchor = document.createElement("a");
+            anchor.href = "<custom-URL>";
+
+            // Move the logoImage element inside the anchor
+            logoImage.parentNode.replaceChild(anchor, logoImage);
+            anchor.appendChild(logoImage);
+        }
+    }
+});
+
+
+</script>
