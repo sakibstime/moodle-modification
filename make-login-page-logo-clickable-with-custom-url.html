@@ -12,14 +12,36 @@ document.addEventListener("DOMContentLoaded", function () {
         if (logoImage) {
             // Create a new anchor element
             var anchor = document.createElement("a");
-            anchor.href = "<custom-URL>";
+            anchor.href = "https://qaharbor.com/edu";
 
             // Move the logoImage element inside the anchor
             logoImage.parentNode.replaceChild(anchor, logoImage);
             anchor.appendChild(logoImage);
+
+            // Style the logoImage
+            logoImage.style.width = "60%";
+            logoImage.style.display = "block";
+            logoImage.style.margin = "0 auto 40px"; // Center alignment
         }
     }
 });
 
 
 </script>
+
+
+<!-- 
+
+How to Use:
+Insert into Your Website or Moodle Theme:
+
+Log in as an admin.
+Navigate to Site administration > Appearance > Additional HTML.
+Add this script in the Additional HTML section (footer or header, as appropriate).
+Save and Clear Cache:
+
+Save the changes.
+Purge Moodle’s cache via Site administration > Development > Purge all caches.
+
+
+-->
